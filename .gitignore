@@ -1,0 +1,6 @@
+ENV.py 
+.git 
+.idea 
+lib 
+Scripts 
+pyenv.cfg
