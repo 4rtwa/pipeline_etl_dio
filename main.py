@@ -1,16 +1,15 @@
 import json
-from os import getenv, environ
+from os import getenv
 import extract.tapper as tp
 import transform.strainer as st
 import load.bucket as bt
 
-print(environ)
 #APP PRINCIPAL
 
-sdw2023_api_url = getenv('OPEN_AI_KEY')
+sdw2023_api_url = "https://sdw-2023-prd.up.railway.app/users"
 
 def get_file_and_header(file='SDW2023.csv', header='UserID'):
-    file, header = input().split(' ')
+    #file, header = input().split(' ')
     return file, header
 
 user_ids, header = get_file_and_header()
